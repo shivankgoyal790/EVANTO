@@ -1,0 +1,144 @@
+body{
+    margin: 0;
+    color: #767676;
+    background-color: #f5f5f5;
+}
+.navbar1{
+    position: fixed;
+    width: 100%;
+    margin-top: 0;
+    background-color: #262626;
+    padding-top: 18px;
+    padding-left: 8px;
+    padding-right: 14px;
+    padding-bottom: 12px;
+}
+
+
+.container{
+    text-align: center;
+}
+.img1{
+
+    width: 130px;
+}
+
+.logo{
+    
+    margin-left: 12px;
+    
+
+}
+
+.logo3{
+    width: 100%;
+
+}
+
+.image-container{
+    position: relative;
+    margin-top: 5px;
+}
+
+.pos{
+    position: absolute;
+    top: 10px;
+    z-index: 1; 
+}
+
+
+.btn1{
+    font-size: 14px;
+    padding: 6px 18px;
+    float: right;
+    margin-right: 20px;
+    box-shadow: 0 2px 0 #6f9a37;
+    background-color: #6f9a37;
+    border: none;
+    border-radius: 4px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+    margin-top: -6px;
+
+}
+
+.btn2{
+
+    font-size: 16px;
+    font-weight: 550;
+    font-family: sans-serif;
+    cursor: pointer;
+    padding: 14px 40px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.btn2:hover{
+    background-color: #ff3271;
+    transition: ease-out 1s;
+    color: white;
+    
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+   width: 100%;
+}
+  
+  .flex1 {
+    padding: 10px;
+    flex: 30%;
+  }
+
+  .space{
+
+    padding: 0px 20px 0px 20px;
+  }
+  
+  .flex2 {
+    padding: 25px 0px 5px 0px;
+    flex: 40%;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 650;
+
+  }
+
+  .flex3{
+    padding: 10px;
+    flex: 30%;
+    background-color: aquamarine;
+  }
+
+
+  @media (max-width: 817px) {
+    .flex-container {
+      flex-wrap: wrap;
+    }
+    .flex2{
+        text-align: center;
+    }
+
+    .flex3{
+        flex:100%;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .flex-container {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+    
+  }
+
+  
+
