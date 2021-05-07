@@ -2,7 +2,25 @@ body{
     margin: 0;
     color: #767676;
     background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
 }
+.center1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.center2{
+    text-align: center;
+    font-size: 20px;
+}
+
+.pad{
+    margin-top: 50px;
+    position: relative;
+}
+
+
 .navbar1{
     position: fixed;
     width: 100%;
@@ -37,15 +55,36 @@ body{
 
 .image-container{
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .pos{
     position: absolute;
-    top: 10px;
-    z-index: 1; 
+    top: 20px;
+    z-index: 1;
+    width: 100%; 
 }
 
+.heading{
+    width: 40%;
+    position: absolute;
+    left: 80px;
+    top: 280px;
+    height: 200px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+
+.heading1{
+    font-size : 70px;
+    font-weight :750;
+    line-height: 70px;
+
+
+}
 
 .btn1{
     font-size: 14px;
@@ -85,12 +124,38 @@ body{
     
 }
 
+.btn4{
+    position: relative;
+    padding: 17px 45px 17px;
+    line-height: 25px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(left, #ff8ef7, #ca8cff);
+    border: none;
+    margin-top: 20px;
+}
+
+.btn4:hover{
+    background: -webkit-linear-gradient(right, #ff8ef7, #ca8cff);
+}
 .flex-container {
     display: flex;
     flex-direction: row;
     font-size: 30px;
     text-align: center;
-   width: 100%;
+    
 }
   
   .flex1 {
@@ -115,11 +180,10 @@ body{
   .flex3{
     padding: 10px;
     flex: 30%;
-    background-color: aquamarine;
   }
 
 
-  @media (max-width: 817px) {
+  @media  screen and (max-width: 817px) {
     .flex-container {
       flex-wrap: wrap;
     }
@@ -132,13 +196,72 @@ body{
     }
   }
 
-  @media (max-width: 575px) {
+  @media screen and (max-width:530px) {
+      .pad{
+          bottom : 0;
+      }
+      
+  }
+
+  @media screen and (max-width:575px) {
     .flex-container {
       flex-wrap: nowrap;
       flex-direction: column;
     }
+
+    .pad{
+        position: relative;
+        margin-top: 100%;
+    }
+
+    .heading{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        display: block; 
+
+    }
+
+    .heading1{
+        line-height:1;
+    }
+
     
   }
+
+  @media screen and (max-width: 1200px) {
+
+    .logo3{
+        display: none;
+    }
+
+     .heading{
+         width: 80%;
+     }
+    .pad{
+        margin-top: 70%;
+    }
+
+  
+
+}
+
+
+@media screen and (max-width:768px)
+{
+        .heading1{
+            font-size: 40px;
+        }
+}
+
+@media screen and (max-width:900px) {
+    
+    .pad{
+        margin-top: 100%;
+    }
+
+}
+
 
   
 
