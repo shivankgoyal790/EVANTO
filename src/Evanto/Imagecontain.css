@@ -1,0 +1,39 @@
+.flex-container1{
+    display: flex;
+    flex-wrap: wrap;   
+    flex-direction:row ;
+    position: static;
+    row-gap: 3cm;
+    padding: 100px 100px 20px 100px;
+}
+
+.flexbox{
+    flex:30%;
+    margin: 20px;
+
+}
+
+
+
+
+
+
+@media screen and (max-width:920px) {
+
+    .flexbox{
+        flex:80%;
+
+    }
+   
+
+}
+
+@media screen and (max-width:500px) {
+
+    .flexbox{
+        flex:100%;
+        background-color: violet;
+    }
+   
+
+}
