@@ -5,6 +5,7 @@ import Logo1 from "E:/react_practice/development/src/Evanto/images/evantologo.sv
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Logo2 from "E:/react_practice/development/src/Evanto/images/logo.png";
 import logo3 from "E:/react_practice/development/src/Evanto/images/banner.jpg";
+import CardContainer from './CardContainer';
 
 
 
@@ -21,9 +22,6 @@ const Evanto = () => {
                 </span>
             <button className="btn1">Buy now</button>
             </div>
-
-          
-            <br></br><br></br>
             <div className="back">
                     <div className="image-container">
                         <img className="logo3" src={logo3} alt="hi" />
@@ -56,6 +54,7 @@ const Evanto = () => {
                 <h4 className="center2"> Welcome to the Limerick WordPress Theme</h4>
                 <Imagecontain /> 
             </div>
+            <CardContainer />
 
      
 
