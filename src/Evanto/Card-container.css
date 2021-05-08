@@ -1,0 +1,34 @@
+.container1{
+    display: flex;
+    padding: 100px 150px;
+    column-gap: 25px;
+    flex-wrap: wrap;
+}
+
+.flex-box1{
+    flex: 300px;
+
+}
+
+
+@media screen and (max-width:350px) {
+    
+    .container1{
+        flex-direction: column ;
+        padding: 50px 0px;
+    }
+ 
+}
+@media screen and (max-width:600px) {
+    
+    .container1{
+        flex-direction: column ;
+        padding: 50px 50px;
+    }
+ 
+    
+.flex-box1{
+    flex: 100%;
+    
+}
+}
