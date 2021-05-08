@@ -4,7 +4,8 @@
     flex-direction:row ;
     position: static;
     row-gap: 3cm;
-    padding: 100px 100px 20px 100px;
+    padding: 100px 180px 20px 100px;
+
 }
 
 .flexbox{
@@ -17,23 +18,18 @@
 
 
 
+@media screen and (max-width:900px) {
 
-@media screen and (max-width:920px) {
+
+    .flex-container1{
+        flex-direction: column;
+        padding: 5% 22% 5% 0%;
+    }
 
     .flexbox{
-        flex:80%;
-
+        width: 100%;
     }
    
 
 }
 
-@media screen and (max-width:500px) {
-
-    .flexbox{
-        flex:100%;
-        background-color: violet;
-    }
-   
-
-}
