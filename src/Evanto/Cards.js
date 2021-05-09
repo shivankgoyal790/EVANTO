@@ -1,14 +1,15 @@
 import React from "react"
 import "./Cards.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const Card = () =>{
+const Card = (props) =>{
 
     return(
         <>
             <div className="card-container">
-                    <h3>18+ Pages</h3>
-                    <p>This Theme comes with necessary features for your online presence like portfolio, blog
-                    page etc.</p>
+                    <i className="iconsize"><FontAwesomeIcon icon={props.Myicon} /></i>
+                    <h4 style= { {marginTop : "8px"}}>{props.heading}</h4>
+                    <p style={ {color: "#747474" , lineHeight:"30px" }}>{props.para}</p>
 
             </div>
 
