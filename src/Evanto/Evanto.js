@@ -5,6 +5,8 @@ import Logo1 from "E:/react_practice/development/src/Evanto/images/evantologo.sv
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Logo2 from "E:/react_practice/development/src/Evanto/images/logo.png";
 import logo3 from "E:/react_practice/development/src/Evanto/images/banner.jpg";
+import logo4 from "E:/react_practice/development/src/Evanto/images/responsive.jpg";
+import logo5 from "E:/react_practice/development/src/Evanto/images/mockup.png";
 import CardContainer from './CardContainer';
 
 
@@ -55,6 +57,21 @@ const Evanto = () => {
                 <Imagecontain /> 
             </div>
             <CardContainer />
+            <div className="foot">
+                
+                <img src={logo4} alt="hi" className="logo4"/>
+                <div className="foots">
+                <h1 className="font1">Fully Responsive </h1>
+                <h1 className="font1">& Retina Ready</h1>
+                </div>
+                <img src={logo5} alt="hi" className="logo1" />
+            </div>
+           
+            <div className="footer1">
+                <h1>Your Great-Looking Website</h1>
+                <h1>Starts Right Here.</h1>
+                <button className="btn2">PURSHASE NOW</button>
+            </div>
 
      
 

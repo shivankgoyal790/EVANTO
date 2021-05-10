@@ -185,6 +185,51 @@ h1{
     flex: 30%;
   }
 
+  .logo4{
+      width: 100%;
+      height: 45vw;
+      position: absolute;
+  }
+
+  .footer1{
+       color: #222;
+      margin-top: 70%;
+      color: black;
+      padding-bottom: 250px;
+      font-size: 50px;
+      font-weight: 700;
+      text-align: center;
+      font-family: poppins;
+      position: relative;
+
+  }
+
+  .foot{
+      position: relative;
+  }
+
+  .foots{
+      z-index: 1;
+      color: white;
+      font-family: poppins;
+        margin-top: 7%;
+        width: 100%;
+        position: absolute;
+          text-align: center;
+
+  }
+
+  .logo1{
+      position: absolute;
+      margin-top: 20%;
+      width: 70%;
+      left: 15%;
+  }
+
+  .font1{
+      font-size: 4vw;
+  }
+
 
   @media  screen and (max-width: 817px) {
     .flex-container {
@@ -220,6 +265,15 @@ h1{
         position: relative;
         margin-top: 100%;
     }
+
+    
+  .logo4{
+    height: 300px;
+}
+
+.foots{
+    font-size: 10px;
+}
 
     .heading{
         width: 100%;
@@ -258,6 +312,7 @@ h1{
     .pad{
         margin-top: 70%;
     }
+
 
   
 
