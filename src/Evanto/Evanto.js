@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./Evanto.css";
 import Imagecontain from "./Imagecontain.js"
 import Logo1 from "E:/react_practice/development/src/Evanto/images/evantologo.svg";
@@ -8,16 +8,42 @@ import logo3 from "E:/react_practice/development/src/Evanto/images/banner.jpg";
 import logo4 from "E:/react_practice/development/src/Evanto/images/responsive.jpg";
 import logo5 from "E:/react_practice/development/src/Evanto/images/mockup.png";
 import CardContainer from './CardContainer';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
+
+
+const myfunction1 = () =>{
+ 
+    document.documentElement.scrollTop = 0;
+
+}
+
+
 
 
 
 const Evanto = () => {
+
+    const[visible , setvisible] = useState(false)
+    const toggleVisible = () =>{
+    if (document.documentElement.scrollTop > 10) {
+        setvisible(true);
+  } else {
+    setvisible(false);
+  }
+}
+
+  window.addEventListener('scroll', toggleVisible);
+    
 
     return( 
         <>
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
+            <div className="top1">
+                    <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
+            </div>
             <div className="navbar1"> 
                 <span className="logo"> 
                 <img className="img1" src={Logo1}  alt="logo" />
