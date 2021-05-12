@@ -3,6 +3,7 @@ body{
     color: #767676;
     background-color: #f5f5f5;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .top1{
@@ -30,7 +31,9 @@ body{
     animation: example 1s 1;
     transition: 1s ease;
     animation-iteration-count: 1;
- 
+    animation-fill-mode: forwards;
+    
+   
 }
 
 @keyframes example {
@@ -101,6 +104,7 @@ body{
     z-index: 1;
     width: 100%; 
 }
+
 
 .heading{
     width: 40%;
@@ -203,7 +207,26 @@ h1{
   .space{
 
     padding: 0px 20px 0px 20px;
+    cursor: pointer;
   }
+
+.anchor{
+
+    color: black;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.anchor:hover{
+
+    text-decoration: none;
+    color: black;
+}
+
   
   .flex2 {
     padding: 25px 0px 5px 0px;

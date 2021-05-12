@@ -22,14 +22,22 @@ const myfunction1 = () =>{
 
 
 
+
+
+
+
 const Evanto = () => {
 
     const[visible , setvisible] = useState(false)
+
+
+
     const toggleVisible = () =>{
     if (document.documentElement.scrollTop > 10) {
         setvisible(true);
   } else {
     setvisible(false);
+    
   }
 }
 
@@ -52,14 +60,14 @@ const Evanto = () => {
             </div>
             <div className="back">
                     <div className="image-container">
-                        <img className="logo3" src={logo3} alt="hi" />
+                      <img className="logo3" src={logo3} alt="hi" />
                         <div className="pos">
                             <div class="flex-container">
                             <div class="flex1">  <img src={Logo2} alt="hi" /> </div>
                             <div class="flex2">
                                     <span className="space">Home</span>
-                                    <span className="space">Main Demo</span>
-                                    <span className="space">Features</span>
+                                    <a href="#pad" className="anchor"><span className="space">Main Demo</span></a>
+                                    <a href="#cardtag" className="anchor"><span className="space">Features</span></a>
                                 
                             </div>
                             <div class="flex3" >
@@ -77,12 +85,12 @@ const Evanto = () => {
 
             </div>
             
-            <div className="pad">
+            <div className="pad" id="pad">
                 <h1 className="center1">Check Out All The Pages</h1>
                 <h4 className="center2"> Welcome to the Limerick WordPress Theme</h4>
                 <Imagecontain /> 
             </div>
-            <CardContainer />
+            <div id="cardtag"><CardContainer /></div>
             <div className="foot">
                 
                 <img src={logo4} alt="hi" className="logo4"/>
