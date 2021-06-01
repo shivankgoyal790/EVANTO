@@ -79,20 +79,80 @@ body{
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto;
-    
+    grid-template-areas:
+      'item1 item1 item2 item3'
+      'item1 item1 item4 item5'
+      'item6 item7 item8 item8'
+      'item9 item9 item10 item11'
+      'item12 item12 item13 item14';
+    grid-gap: 0px;
    
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    font-size: 30px;
 }
 
-.item1{
-    flex:50%;
+.item-1{
+grid-area: item1;
 }
-
-.item2{
-    flex:25%;
+.item-2{
+    grid-area: item2;
 }
-
+.item-3{
+    grid-area: item3;
+}
+.item-4{
+    grid-area: item4;
+}
+.item-5{
+    grid-area: item5;
+}
+.item-6{
+    grid-area: item6;
+}
+.item-7{
+    grid-area: item7;
+}
+.item-8{
+    grid-area: item8;
+}
+.item-9{
+    grid-area: item9;
+}
+.item-10{
+    grid-area: item10;
+}
+.item-11{
+    grid-area: item11;
+}
+.item-12{
+    grid-area: item12;
+}
+.item-13{
+    grid-area: item13;
+}
+.item-14{
+    grid-area: item14;
+}
 
 .image1{
     width: 100%;
 }
+
+.item-1:hover{
+    transform: scale(1.1);
+    transform-origin: 50% 50%;
+    transition: ease-out 1s;
+    
+}
+
+
+
+.hih{
+    padding: 0px 0px;
+    margin: 0;
+}
+
