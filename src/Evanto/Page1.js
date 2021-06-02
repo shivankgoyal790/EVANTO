@@ -19,8 +19,11 @@ import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons' 
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons' 
 import { faPinterestP} from '@fortawesome/free-brands-svg-icons' 
-import { faDribbble} from '@fortawesome/free-brands-svg-icons' 
+import { faDribbble} from '@fortawesome/free-brands-svg-icons'
+import {faLink}  from "@fortawesome/free-solid-svg-icons" 
+import {faSearch}  from "@fortawesome/free-solid-svg-icons" 
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Overlay from "E:/react_practice/development/src/Evanto/Overlay.js"
 const Page1 = () =>{
     
     return(
@@ -57,20 +60,30 @@ const Page1 = () =>{
                    
 
                     <div className="grid-container">
-                        <div className="item-1"><img className="image1" src={Logo2} alt="hi" /></div>
-                        <div className="item-2"><img className="image1" src={Logo3} alt="hi" /></div>
-                        <div className="item-3"><img className="image1" src={Logo4} alt="hi" /></div>
-                        <div className="item-4"><img className="image1" src={Logo5} alt="hi" /></div>
-                        <div className="item-5"><img className="image1" src={Logo6} alt="hi" /></div>
-                        <div className="item-6"><img className="image1" src={Logo7} alt="hi" /></div>
-                        <div className="item-7"><img className="image1" src={Logo8} alt="hi" /></div>
-                        <div className="item-8"><img className="image1" src={Logo9} alt="hi" /></div>
-                        <div className="item-9"><img className="image1" src={Logo10} alt="hi" /></div>
-                        <div className="item-10"><img className="image1" src={Logo11} alt="hi" /></div>
-                        <div className="item-11"><img className="image1" src={Logo4} alt="hi" /></div>
-                        <div className="item-12"><img className="image1" src={Logo12} alt="hi" /></div>
-                        <div className="item-13"><img className="image1" src={Logo13} alt="hi" /></div>
-                        <div className="item-14"><img className="image1" src={Logo14} alt="hi" /></div>
+                        <div className="item-1"><img className="image1" src={Logo2} alt="hi"/></div>
+                        <div className="item-2"> <Overlay imglink={Logo3} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-3">
+                        <div className="pos">
+                        <img className="image1" src={Logo4} alt="hi"/>
+                        <h1 className="text">About Us</h1>
+                        </div>
+                        </div>
+                        <div className="item-4"><Overlay imglink={Logo5} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-5"><Overlay imglink={Logo6} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-6"><Overlay imglink={Logo7} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-7"><img className="image1" src={Logo8} alt="hi"/></div>
+                        <div className="item-8"><Overlay imglink={Logo9} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-9"><Overlay imglink={Logo10} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-10"><Overlay imglink={Logo11} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-11">
+                        <div className="pos">
+                        <img className="image1" src={Logo4} alt="hi"/>
+                        <h1 className="text">Meet Team</h1>
+                        </div>
+                        </div>
+                        <div className="item-12"><img className="image1" src={Logo12} alt="hi"/></div>
+                        <div className="item-13"><Overlay imglink={Logo13} icons1={faLink} icons2={faSearch} /></div>
+                        <div className="item-14"><img className="image1" src={Logo14} alt="hi"/></div>
                       
 
                     </div>

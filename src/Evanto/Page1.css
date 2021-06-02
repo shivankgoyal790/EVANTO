@@ -7,7 +7,20 @@
 
 body{
     margin:0;
+    overflow-x: hidden;
 }
+
+.text{
+    position:absolute; 
+    top:40%; 
+    text-align: center;
+    width: 100%;
+    color:white;
+    font-weight:800; 
+    font-size:50px;
+}
+
+
 
 .logo6{
     width: 98%;
@@ -140,14 +153,9 @@ grid-area: item1;
 
 .image1{
     width: 100%;
+    position: relative;
 }
 
-.item-1:hover{
-    transform: scale(1.1);
-    transform-origin: 50% 50%;
-    transition: ease-out 1s;
-    
-}
 
 
 
