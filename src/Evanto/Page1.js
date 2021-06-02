@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import "./Page1.css"
 import Logo1 from "E:/react_practice/development/src/Evanto/images/logo.png";
 import Logo2 from "E:/react_practice/development/src/Evanto/images/1-2.jpg";
@@ -22,9 +22,29 @@ import { faPinterestP} from '@fortawesome/free-brands-svg-icons'
 import { faDribbble} from '@fortawesome/free-brands-svg-icons'
 import {faLink}  from "@fortawesome/free-solid-svg-icons" 
 import {faSearch}  from "@fortawesome/free-solid-svg-icons" 
+import {faBullhorn}  from "@fortawesome/free-solid-svg-icons"
+import {faAngleUp}  from "@fortawesome/free-solid-svg-icons"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Overlay from "E:/react_practice/development/src/Evanto/Overlay.js"
 const Page1 = () =>{
+    
+    const myfunction1 = () =>{
+        document.documentElement.scrollTop = 0;
+    }
+
+    const [visible,setvisible] = useState(false);
+
+    
+    const toggleVisible = () =>{
+        if (document.documentElement.scrollTop > 10) {
+            setvisible(true);
+      } else {
+        setvisible(false);
+        
+      }
+    }
+    
+      window.addEventListener('scroll', toggleVisible);
     
     return(
             <>
@@ -32,6 +52,11 @@ const Page1 = () =>{
                 <style>
                 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
                 </style>
+
+                    <div className="scrolltotop">
+                        <span className="gotobtn" style={{display : visible ? "block" : "none"}} onClick={myfunction1}>
+                        <FontAwesomeIcon icon={faAngleUp} /></span>
+                    </div>
                
                     <div className="flexbox1">
                         <div className="flex-1"><img className="logo6" src={Logo1} alt="hi" /></div>
@@ -81,11 +106,44 @@ const Page1 = () =>{
                         <h1 className="text">Meet Team</h1>
                         </div>
                         </div>
-                        <div className="item-12"><img className="image1" src={Logo12} alt="hi"/></div>
+                        <div className="item-12">
+                        <div className="pos">
+                        <img className="image1" src={Logo12} alt="hi"/>
+                        <div className="overlay2">
+                            <h1>"Leverage agile frameworks to the
+                                provide a robust synopsis for high</h1>
+                                <p>-; John Doue</p>
+                        </div>
+                        </div>
+                        </div>
                         <div className="item-13"><Overlay imglink={Logo13} icons1={faLink} icons2={faSearch} /></div>
-                        <div className="item-14"><img className="image1" src={Logo14} alt="hi"/></div>
+                        <div className="item-14">
+                        
+                        <div className="pos">
+                        <img className="image1" src={Logo14} alt="hi"/>
+                        <div style={{position:"absolute" , color:"#ff3271" , top:"30%", width:"100%" ,textAlign:"center"}}>
+                        <FontAwesomeIcon style={ {fontSize:"45px"}} icon={faBullhorn} /> 
+                        <h1 className="text" style={{marginTop:"30px"}}>Contact</h1>
+                        </div>
+                        
+                        </div>
+                        </div>
                       
 
+                    </div>
+
+                    <div className="foot">
+                    <img className="footimage" src={Logo1} alt="hi" />
+                    <br />
+                    <p>© Copyright 2020 Limerick. All Rights Reserved</p>
+                    <div>
+                            
+                            <span className="icons"><FontAwesomeIcon icon={faFacebookF} /></span>
+                            <span className="icons"><FontAwesomeIcon icon={faTwitter} /></span>
+                            <span className="icons"><FontAwesomeIcon icon={faGooglePlusG} /></span>
+                            <span className="icons"><FontAwesomeIcon icon={faPinterestP} /></span>
+                            <span className="icons"><FontAwesomeIcon icon={faDribbble} /></span>
+                        </div>
                     </div>
            
 

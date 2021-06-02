@@ -81,9 +81,11 @@ body{
     background-color: #ff3271;
     color: white;
     margin-left: 2px;
-    padding: 8px 9px;
+    width: 30px;
+    height: 30px;
+    padding: 10px 12px;
     border-radius: 50%;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .icons:hover{
@@ -153,8 +155,70 @@ grid-area: item1;
 
 .image1{
     width: 100%;
-    position: relative;
+    
 }
+
+.overlay2{
+    width: 73%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: white;
+    opacity: 0.8;
+    padding: 60px 30px;
+}
+
+.overlay2 > h1 {
+    font-size: 28px;
+    color: black;
+    font-weight: 800;
+}
+
+.overlay2 > p{
+    position: absolute;
+    font-size: 20px;
+    color: black;
+    right: 50px;
+    font-weight: 500;
+}
+.footimage{
+    width:220px;
+    margin-bottom: 10px;
+}
+.foot{
+    position: relative;
+    text-align: center;
+    padding: 75px 15px 80px;
+    background-color: #f4f9ff;
+    width: 100%;
+}
+
+.scrolltotop{
+    position: fixed;
+    bottom: 5%;    
+    right: 2%;
+    z-index: 1;
+    text-align: center;
+}
+
+.gotobtn{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    display: none;
+    padding: 10px 15px;
+
+}
+
+.gotobtn:hover{
+    background-color: #ff3271;
+    cursor: pointer;
+}
+
+
+
+
 
 
 
