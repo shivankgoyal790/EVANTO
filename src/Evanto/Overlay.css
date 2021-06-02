@@ -1,0 +1,79 @@
+.pos{
+    position: relative;
+}
+
+.left{
+    position: absolute;
+    background-color: rgba(255,50,113,0.90);
+    color: rgba(255,50,113,0.90);
+    text-align: center;
+    left: 0;
+    top: 40%;
+    width: 0%;
+    opacity: 0;
+    padding: 16px 0px;
+}
+
+.right{
+    position: absolute;
+    top:40%;
+    width: 0%; 
+    color: black;
+    text-align: center;
+    background-color: black;
+    opacity: 0;
+    right: 0;
+    padding: 16px 0px;
+}
+
+.pos:hover .left{
+    opacity: 1;
+    width: 50%;
+    transition: ease 0.5s;
+} 
+
+.pos:hover .right{
+    opacity: 1;
+    width: 50%;
+    transition: ease 0.5s;
+}
+
+.icon1{
+    left:34%;
+    position: absolute;
+    background-color: white;
+    padding: 8px 14px;
+    top:65%;
+    font-size: 20px;
+    border-radius: 6px;
+    color: rgba(255,50,113,0.90);
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+.icon2{
+    cursor: pointer;
+    right: 34%;
+    position: absolute;
+    background-color: white;
+    font-size: 20px;
+    border-radius: 6px;
+    padding: 8px 14px;
+    top: 65%;
+    opacity: 0;
+    color: rgba(255,50,113,0.90);
+}
+
+.pos:hover .icon1{
+    top: 45%;
+    opacity: 1;
+    transition: ease 0.5s;
+}
+
+.pos:hover .icon2{
+    top: 45%;
+    opacity: 1;
+    transition: ease 0.5s;
+}
