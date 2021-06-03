@@ -7,18 +7,31 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons'
 import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons' 
 import { faPinterestP} from '@fortawesome/free-brands-svg-icons' 
 import { faDribbble} from '@fortawesome/free-brands-svg-icons'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 const Pageheader = () =>{
 
     const[pad , setpad] = useState(true);
     const togglepad = () =>{
+        
+        if(window.innerWidth > "768px"){
         if(document.documentElement.scrollTop < 25)
             setpad(true);
         else
-            setpad(false);    
+            setpad(false);
+        }        
+    }
+    const[visible , setvisible ] = useState(true);
+    const toggledisplay = () => {
+        if(window.innerWidth < 815)
+            setvisible(false);
+         else
+            setvisible(true)   
     }
 
 
+
     window.addEventListener("scroll" , togglepad)
+    window.addEventListener("resize" , toggledisplay)
     return(
         
 <div className="flexbox1" style={{padding: pad ? "65px 0px" : "40px 0px"}}>
@@ -43,7 +56,10 @@ const Pageheader = () =>{
     <span className="icons"><FontAwesomeIcon icon={faPinterestP} /></span>
     <span className="icons"><FontAwesomeIcon icon={faDribbble} /></span>
 </div>
+
+<span className="menu" style={{display : visible ? "none" : "block"}}><FontAwesomeIcon icon={faBars} /> </span>
 </div>
+
 
     );
 }

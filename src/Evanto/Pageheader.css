@@ -58,6 +58,15 @@
     color: white;
 }
 
+.menu{
+    padding: 12px 12px;
+    color: white;
+    background-color: #ff3271;
+    float: right;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 .icons{
     background-color: #ff3271;
     color: white;
@@ -69,6 +78,59 @@
     font-size: 12px;
 }
 
+
 .icons:hover{
     background-color: turquoise;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:990px) {
+
+    .flex-3{
+        display: none;
+    }
+
+    .flex-2{
+        flex: 80%;
+        margin-left: 0px;
+    }
+
+    .flex-1{
+        flex: 20%;
+    
+    }
+
+    .logo6{
+        margin-left: 20px;
+        margin-top: 0px;
+    }
+
+    .list3 > li{
+        font-size: 14px;
+        margin-left: 6px;
+    }
+
+
+    
+
+}
+
+@media screen and (max-width:768px) {
+
+    .flex-2{
+        display: none;
+    }
+
+    .flex-1 .logo6{
+        width: 40%;
+        float: left;
+        margin-left: 30px;
+    }
+
+    .flexbox1{
+        padding: 40px 0px;
+    }
 }
