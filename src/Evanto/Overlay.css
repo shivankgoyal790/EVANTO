@@ -27,6 +27,28 @@
     padding: 16px 0px;
 }
 
+.left1{
+    position: absolute;
+    text-align: right;
+    left: 0;
+    top: 55%;
+    width: 50%;
+    opacity: 0;
+    padding: 16px 0px;
+    background-color: transparent;
+}
+
+.right1{
+    position: absolute;
+    text-align: left;
+    right: 0;
+    top: 55%;
+    width: 50%;
+    opacity: 0;
+    padding: 16px 0px;
+    background-color: transparent;
+}
+
 .pos:hover .left{
     opacity: 1;
     width: 50%;
@@ -40,15 +62,12 @@
 }
 
 .icon1{
-    left:34%;
-    position: absolute;
     background-color: white;
     padding: 8px 14px;
-    top:65%;
     font-size: 20px;
     border-radius: 6px;
+    margin-right: 6px;
     color: rgba(255,50,113,0.90);
-    opacity: 0;
     cursor: pointer;
 }
 
@@ -56,25 +75,22 @@
 
 .icon2{
     cursor: pointer;
-    right: 34%;
-    position: absolute;
     background-color: white;
     font-size: 20px;
     border-radius: 6px;
     padding: 8px 14px;
-    top: 65%;
-    opacity: 0;
+    margin-left: 6px;
     color: rgba(255,50,113,0.90);
 }
 
-.pos:hover .icon1{
-    top: 45%;
+.pos:hover .left1{
+    top: 40%;
     opacity: 1;
     transition: ease 0.5s;
 }
 
-.pos:hover .icon2{
-    top: 45%;
+.pos:hover .right1{
+    top: 40%;
     opacity: 1;
     transition: ease 0.5s;
 }
