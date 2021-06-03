@@ -1,0 +1,74 @@
+.logo6{
+    width: 98%;
+    margin-top: -20px;
+    
+}
+
+.flexbox1{
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    background-color: white;
+    top: 0;
+    padding: 65px 0px;
+    z-index: 99;
+    transition: ease-in-out 0.5s;
+
+}
+
+.flex-1{
+    flex : 20%;
+    text-align: center;
+}
+
+.flex-2{
+
+    flex: 60%;
+    text-align: center;
+    
+}
+.flex-3{
+    flex : 20%;
+    text-align: center;
+}
+.list3{
+    text-decoration: none;
+    list-style-type: none;
+    display: inline;
+    font-family: poppins;
+
+}
+
+.list3 > li{
+    display: inline;
+    padding: 6px 14px;
+    font-size: 15px;
+    border-radius: 16px;
+    margin-left: 6px;
+}
+
+.list3 > li:hover{
+    background-color: #6610f2;
+    transition: all 500ms ease;
+    color: white;
+   
+}
+.active{
+    background-color: #6610f2;
+    color: white;
+}
+
+.icons{
+    background-color: #ff3271;
+    color: white;
+    margin-left: 2px;
+    width: 30px;
+    height: 30px;
+    padding: 10px 12px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.icons:hover{
+    background-color: turquoise;
+}
