@@ -15,7 +15,7 @@ body{
 
 .overbtn{
     position: absolute;
-    top:50%;
+    top:55%;
     text-align: center;
     background-color: #ff3271;
     border-radius: 50px;
@@ -102,7 +102,7 @@ grid-area: item1;
 
 .overlay2{
     width: 73%;
-    height: 250px;
+    height: 70%;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -112,16 +112,18 @@ grid-area: item1;
 }
 
 .overlay2 > h1 {
-    font-size: 28px;
+    font-size: 2vw;
+    width: 100%;
     color: black;
     font-weight: 800;
 }
 
 .overlay2 > p{
-    position: absolute;
-    font-size: 20px;
+    width: 100%;
+    font-size: 2vw;
     color: black;
     right: 50px;
+    text-align: right;
     font-weight: 500;
 }
 
@@ -158,7 +160,59 @@ grid-area: item1;
     padding: 10px 35px;
 }
 
+body{
+    overflow-x: hidden;
+}
 
+@media screen and (max-width:990px) {
+    
+    body{
+        overflow-x: hidden;
+    }
+    .grid-container{
+        grid-template-areas:
+      'item1 item2'
+      'item3 item4'
+      'item5 item6'
+      'item7 item8'
+      'item7 item10'
+      'item9 item10'
+      'item11 item13'
+        'item14 item12';
+    }
+
+
+
+}
+
+@media screen and (max-width:768px) {
+    
+
+    body{
+        overflow-x: hidden;
+    }
+    .grid-container{
+        grid-template-areas:
+      'item1' 
+      'item2'
+      'item3'
+        'item4'
+      'item5' 
+      'item6'
+      'item7'
+       'item8'
+      'item9' 
+      'item10'
+      'item11' 
+      'item12'
+    'item13' 
+    'item14';
+    }
+
+    .text{
+        font-size: 100%;
+    }
+}
 
 
 
