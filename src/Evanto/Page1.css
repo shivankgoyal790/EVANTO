@@ -44,6 +44,7 @@ body{
       'item12 item12 item13 item14';
     grid-gap: 0px;
    
+   
   }
   
 .grid-container > div {
@@ -93,6 +94,10 @@ grid-area: item1;
 }
 .item-14{
     grid-area: item14;
+}
+
+.item-15{
+    grid-area: item15;
 }
 
 .image1{

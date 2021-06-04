@@ -50,7 +50,7 @@ const Evanto = () => {
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
             <div className="top1">
-                    <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
+                <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
             </div>
             <div className="navbar1"> 
                 <span className="logo"> 
@@ -63,7 +63,7 @@ const Evanto = () => {
                       <img className="logo3" src={logo3} alt="hi" />
                         <div className="pos">
                             <div class="flex-container">
-                            <div class="flex1">  <img src={Logo2} alt="hi" /> </div>
+                            <div class="flex1">  <img className="img1" src={Logo2} alt="hi" /> </div>
                             <div class="flex2">
                                     <span className="space">Home</span>
                                     <a href="#pad" className="anchor"><span className="space">Main Demo</span></a>
