@@ -18,21 +18,13 @@ import Logo13 from "E:/react_practice/development/src/Evanto/images/27.jpg";
 import Logo14 from "E:/react_practice/development/src/Evanto/images/28-2.jpg";
 import Logo15 from "E:/react_practice/development/src/Evanto/images/29-2.jpg";
 import Page2overlay from "./Page2overlay";
+import Pageheader2 from "./Pageheader2";
 const Page2 = () =>{
     return(
         <>
             <Pageheader />
-            <div className="header2">
-            <div className="headpos">
-            <h3 className="line1">Welcome To Limerick</h3>
-            <h1 className="line2" style={{position:"relative"}}>
-            <div style={{position:"absolute", zIndex:"-1" ,left:"25%" , backgroundColor:"#ffe991" ,top:"-60px", borderRadius:"50%",padding:"60px 40px"}}>
-            DE</div>SIGN YOUR MIND
-            </h1>
-            <p className="line3">I like to think that my work is a living, breathing embodiment of my passion for discovery. Here’s some of it.</p>    
-            <button className="btn-style-two">READ MORE +</button>
-            </div>
-            </div>
+            <Pageheader2 Line1="Welcome To Limerick" Line2="DESIGN YOUR MIND" Line3="I like to think that my work is a living, breathing embodiment
+             of my passion for discovery. Here’s some of it." disp="inline"/>
             <div className="grid-container2">
                 <div className="item1"><Page2overlay photo={Logo1} /></div>
                 <div className="item2"><Page2overlay photo={Logo2} /></div>
