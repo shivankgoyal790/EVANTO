@@ -1,0 +1,19 @@
+.flexbox5{
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:row ;
+}
+
+body{
+    margin: 0;
+}
+
+.flex5{
+     flex: 25%;
+}
+
+
+.flex5 > img{
+    width: 100%;
+}
