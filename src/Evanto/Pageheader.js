@@ -13,25 +13,22 @@ const Pageheader = () =>{
     const[pad , setpad] = useState(true);
     const togglepad = () =>{
         
-        if(window.innerWidth > "768px"){
         if(document.documentElement.scrollTop < 25)
             setpad(true);
         else
             setpad(false);
-        }        
-    }
+            }
     const[visible , setvisible ] = useState(true);
     const toggledisplay = () => {
         if(window.innerWidth < 815)
             setvisible(false);
          else
             setvisible(true)   
-    }
+        }
 
+    window.addEventListener("scroll" , togglepad);
+    window.addEventListener("resize" , toggledisplay);
 
-
-    window.addEventListener("scroll" , togglepad)
-    window.addEventListener("resize" , toggledisplay)
     return(
         
 <div className="flexbox1" style={{padding: pad ? "65px 0px" : "40px 0px"}}>

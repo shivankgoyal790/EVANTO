@@ -16,7 +16,7 @@ const Imagecontain = () =>{
     return(
             <>
               <div className="flex-container1">
-                <div className="flexbox"><Imageflex  caption="CREATIVE HOME" img={logo4}/></div>
+                <div className="flexbox"><a href="Page1"> <Imageflex  caption="CREATIVE HOME" img={logo4}/></a></div>
                 <div className="flexbox"><Imageflex  caption="DESIGNER HOME" img={logo5}/></div> 
                 <div className="flexbox"><Imageflex  caption="PORTFOLIO HOME" img={logo6}/></div>
                 <div className="flexbox"><Imageflex  caption="PARALLAX HOME" img={logo7}/></div>
