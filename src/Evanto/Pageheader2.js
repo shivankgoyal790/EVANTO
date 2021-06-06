@@ -10,7 +10,11 @@ const Pageheader2 = (props) =>{
         <div className="header2">
             <div className="headpos">
             <h3 className="line1">{props.Line1}</h3>
-            <h1 className="line2" style={{position:"relative"}}>{props.Line2}</h1>
+            <div style={{width:"100%" , textAlign:"center"}}>
+            <span className="line2" style={{position:"relative"}}>{props.Line2}
+            <span className="backcircle"></span>
+            </span>
+            </div>
             <p className="line3">{props.Line3}</p>    
             <button className="btn-style-two" style={{display:props.disp}}>READ MORE+</button>
             </div>

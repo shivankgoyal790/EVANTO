@@ -1,12 +1,25 @@
 .header2{
     padding-top:100px;
     padding-bottom: 150px;
-
+    z-index: 99;
+    background-color: #f8f9fa;
+    position: relative;
 }
 
 .headpos{
     width:100%;
       text-align:center;
+}
+
+.backcircle{
+    z-index: -1;
+    width:120px;
+    height:120px; 
+    position:absolute;
+    top: -15px;
+    left: -15px;
+    background-color: #ffe991;
+    border-radius: 50%;
 }
 
 .line1{
