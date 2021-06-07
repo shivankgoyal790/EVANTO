@@ -25,6 +25,7 @@ import Logo19 from "./images/3-20.jpg"
 import Logo20 from "./images/3-21.jpg"
 import "./Page2.css"
 import Pageheader2 from "./Pageheader2"
+import Gototop from "./Gototop"
 
 
 const Page3 = () =>{
@@ -33,6 +34,7 @@ const Page3 = () =>{
              <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
+            <Gototop />
             <Pageheader />
             <Pageheader2 Line1="Welcome To Limerick" Line2="SHOWCASE YOUR SKILL" Line3="I like to think that my work is a 
             living, breathing embodiment of my passion for discovery. Here’s some of it." disp="none"/>

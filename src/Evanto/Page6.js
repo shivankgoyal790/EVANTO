@@ -4,6 +4,7 @@ import Pageheader from "./Pageheader"
 import Pagefooter from "./Pagefooter"
 import Pageheader2 from "./Pageheader2"
 import Logo1 from "./images/mockup.png"
+import Gototop from "./Gototop"
 
 
 const Page6 = () =>{
@@ -12,6 +13,7 @@ const Page6 = () =>{
          <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
+        <Gototop />
         <Pageheader />
         <Pageheader2 Line2="ABOUT US" disp="none"/>
         <div className="flexbox6">

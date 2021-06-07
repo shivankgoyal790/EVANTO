@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import "./Page1.css"
 import Logo2 from "E:/react_practice/development/src/Evanto/images/1-2.jpg";
 import Logo3 from "E:/react_practice/development/src/Evanto/images/16-1.jpg";
@@ -17,45 +17,27 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {faLink}  from "@fortawesome/free-solid-svg-icons" 
 import {faSearch}  from "@fortawesome/free-solid-svg-icons" 
 import {faBullhorn}  from "@fortawesome/free-solid-svg-icons"
-import {faAngleUp}  from "@fortawesome/free-solid-svg-icons"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";   
 import Overlay from "E:/react_practice/development/src/Evanto/Overlay.js"
 import Pageheader from "./Pageheader";
 import Pagefooter from "./Pagefooter";
+import Gototop from "./Gototop";
 const Page1 = () =>{
     
-    const myfunction1 = () =>{
-        document.documentElement.scrollTop = 0;
-    }
-
-    const [visible,setvisible] = useState(false);
-    const toggleVisible = () =>{
-        if (document.documentElement.scrollTop > 10) {
-            setvisible(true);}
-        else {
-        setvisible(false);}
-    }
-    window.addEventListener('scroll', toggleVisible);
-    
+  
     return(
             <>
            
             <style>
             @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
             </style>
-
-            <div className="scrolltotop">
-                <span className="gotobtn" style={{display : visible ? "block" : "none"}} onClick={myfunction1}>
-                <FontAwesomeIcon icon={faAngleUp} /></span>
-            </div>
-            
-            
+            <Gototop />
             <Pageheader />        
                    
             <div className="grid-container">
                 <div className="item-1">
                     <div className="pos">
-                        <img className="image1" src={Logo2} alt="hi"/>
+                       <img className="image1" src={Logo2} alt="hi"/>
                     <div>
                     <h1 className="text">Paper Lost Boat</h1>
                     <button className="overbtn">READ MORE +</button>

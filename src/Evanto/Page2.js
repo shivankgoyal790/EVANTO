@@ -19,9 +19,11 @@ import Logo14 from "E:/react_practice/development/src/Evanto/images/28-2.jpg";
 import Logo15 from "E:/react_practice/development/src/Evanto/images/29-2.jpg";
 import Page2overlay from "./Page2overlay";
 import Pageheader2 from "./Pageheader2";
+import Gototop from "./Gototop";
 const Page2 = () =>{
     return(
         <>
+            <Gototop />
             <Pageheader />
             <Pageheader2 Line1="Welcome To Limerick" Line2="DESIGN YOUR MIND" Line3="I like to think that my work is a living, breathing embodiment
              of my passion for discovery. Here’s some of it." disp="inline"/>

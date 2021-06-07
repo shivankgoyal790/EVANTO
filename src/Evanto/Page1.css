@@ -133,27 +133,7 @@ grid-area: item1;
 }
 
 
-.scrolltotop{
-    position: fixed;
-    bottom: 5%;    
-    right: 2%;
-    z-index: 1;
-    text-align: center;
-}
 
-.gotobtn{
-    background-color: black;
-    color: white;
-    font-size: 25px;
-    display: none;
-    padding: 10px 15px;
-
-}
-
-.gotobtn:hover{
-    background-color: #ff3271;
-    cursor: pointer;
-}
 
 .overtext{
     position: absolute;
