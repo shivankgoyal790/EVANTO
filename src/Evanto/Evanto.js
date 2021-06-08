@@ -30,9 +30,8 @@ window.addEventListener('scroll', toggleVisible);
         <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
         </style>
-            <div className="top1">
                 <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
-            </div>
+            
             
             <div className="navbar1"> 
                 <span className="logo"> 
@@ -68,7 +67,11 @@ window.addEventListener('scroll', toggleVisible);
                 <h4 className="center2"> Welcome to the Limerick WordPress Theme</h4>
                 <Imagecontain /> 
             </div>
+
+
             <div id="cardtag"><CardContainer /></div>
+            
+            
             <div className="foot">
                 
                 <img src={logo4} alt="hi" className="logo4"/>
