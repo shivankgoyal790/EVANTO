@@ -18,10 +18,8 @@ const Gototop = () =>{
     window.addEventListener('scroll', toggleVisible);
 
     return(
-    <div className="scrolltotop">
-                <span className="gotobtn" style={{display : visible ? "block" : "none"}} onClick={myfunction1}>
-                <FontAwesomeIcon icon={faAngleDoubleUp} /></span>
-    </div>
+            <button className="gotobtn" style={{display : visible ? "block" : "none"}} onClick={myfunction1}>
+                <FontAwesomeIcon icon={faAngleDoubleUp} /></button>
 )
 }
 
