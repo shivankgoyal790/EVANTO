@@ -1,0 +1,25 @@
+body{
+    overflow-x: hidden;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+.flexbox8{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.flex8-1{
+    flex:65%;
+    padding: 10px 0px 40px 0px;
+
+
+}
+
+.flex8-2{
+    flex:35%;
+    background-color: tomato;
+
+}
