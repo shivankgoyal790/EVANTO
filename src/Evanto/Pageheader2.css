@@ -4,6 +4,7 @@
     z-index: 99;
     background-color: #f8f9fa;
     position: relative;
+    width: 100%;
 }
 
 .headpos{
@@ -13,8 +14,8 @@
 
 .backcircle{
     z-index: -1;
-    width:120px;
-    height:120px; 
+    width:10vw;
+    height:10vw; 
     position:absolute;
     top: -15px;
     left: -15px;
@@ -41,7 +42,7 @@
 
 .line2{
 
-    font-size: 60px;
+    font-size: 5vw;
     
     color: #333333;
     font-weight: 1000;
@@ -79,18 +80,16 @@
 
 @media screen and (max-width:470px) {
     .line2{
-        font-size: 30px;
-        
+        font-size: 10vw;
+    }
+
+    .backcircle{
+        width: 20vw;
+        height: 20vw;
     }
 
     .line3{
         max-width: 90%;
         margin-left: 5%;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .line2{
-        font-size: 45px;
     }
 }
