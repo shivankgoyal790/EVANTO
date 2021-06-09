@@ -47,8 +47,10 @@ const Page1 = () =>{
                     <div className="item-2"> <Overlay imglink={Logo3} icons1={faLink} icons2={faSearch} /></div>
                     <div className="item-3">
                         <div className="pos">
+                        <a href="Page6" >
                         <img className="image1" src={Logo4} alt="hi"/>
                         <h1 className="text">About Us</h1>
+                        </a>
                         </div>
                     </div>
                     <div className="item-4"><Overlay imglink={Logo5} icons1={faLink} icons2={faSearch} /></div>
@@ -90,8 +92,10 @@ const Page1 = () =>{
                         <div className="pos">
                         <img className="image1" src={Logo14} alt="hi"/>
                         <div style={{position:"absolute" , color:"#ff3271" , top:"30%", width:"100%" ,textAlign:"center"}}>
+                        <a href="Page9">
                         <FontAwesomeIcon style={ {fontSize:"45px"}} icon={faBullhorn} /> 
                         <h1 className="text" style={{marginTop:"30px"}}>Contact</h1>
+                        </a>
                         </div>
                         
                         </div>

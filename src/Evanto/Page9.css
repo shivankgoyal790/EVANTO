@@ -20,7 +20,7 @@ body{
     padding: 60px 2%;
 }
 
-input[type=text]{
+.enterdetails{
     position: relative;
     width: 35%;
     line-height: 33px;
@@ -37,7 +37,7 @@ input[type=text]{
 
 input[type=textarea]{
     position: relative;
-    width: 77%;
+    width: 72.5%;
     line-height: 33px;
     padding:0px 22px;
     height: 66px;
@@ -51,7 +51,7 @@ input[type=textarea]{
     border: 1px solid #e1e1e1;
 }
 
-input:focus{
+.enterdetails:focus{
     border: none;
     border: 2px solid #ff3271;
     
@@ -141,12 +141,13 @@ input:focus{
         margin-left: 10px;
     }
 
-    input[type=text]{
+    .enterdetails    {
             width: 40%; 
             margin-left: 5px;
     }
     input[type=textarea]{
-        width: 87%; 
+        width: 81%;
+        margin-left: 5px; 
 }
 
 .input-container{
@@ -163,7 +164,7 @@ input:focus{
 
 @media screen and (max-width:768px) {
     
-    input[type=text]{
+    .enterdetails{
         width: 90%;
         margin-left: 0;
     }
@@ -177,7 +178,7 @@ input:focus{
 }
 
 @media screen and (max-width:500px){
-    input[type=text]{
+    .enterdetails{
         width: 80%;
         margin-left: 0;
     }

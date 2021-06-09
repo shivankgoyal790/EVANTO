@@ -33,12 +33,12 @@ const Page9 = () =>{
                 </div>
                 <div className="flex9-2">
                     
-                    <input type="text" placeholder="Name"/>
-                    <input type="text" placeholder="E-Mail" />
+                    <input className="enterdetails" type="text" placeholder="Name"/>
+                    <input className="enterdetails" type="text" placeholder="E-Mail" />
     
                     
-                    <input type="text" placeholder="Phone" />    
-                    <input type="text" placeholder="Subject" />    
+                    <input className="enterdetails" type="text" placeholder="Phone" />    
+                    <input className="enterdetails" type="text" placeholder="Subject" />    
                     
                     
                     <span><input type="textarea" placeholder="My Message" /></span>

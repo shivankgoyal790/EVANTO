@@ -16,15 +16,15 @@ const Imagecontain = () =>{
     return(
             <>
               <div className="flex-container1">
-                <div className="flexbox"><a href="Page1"> <Imageflex  caption="CREATIVE HOME" img={logo4}/></a></div>
-                <div className="flexbox"><Imageflex  caption="DESIGNER HOME" img={logo5}/></div> 
-                <div className="flexbox"><Imageflex  caption="PORTFOLIO HOME" img={logo6}/></div>
-                <div className="flexbox"><Imageflex  caption="PARALLAX HOME" img={logo7}/></div>
-                <div className="flexbox"><Imageflex  caption="CAROUSEL HOME" img={logo8}/></div>
-                <div className="flexbox"><Imageflex  caption="ABOUT US" img={logo9}/></div>
-                <div className="flexbox"><Imageflex  caption="PORTFOLIO" img={logo10}/></div>
-                <div className="flexbox"><Imageflex  caption="BLOG" img={logo11}/></div>
-                <div className="flexbox"><Imageflex  caption="CONTACT" img={logo12}/></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page1"> <Imageflex  caption="CREATIVE HOME" img={logo4}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page2"><Imageflex  caption="DESIGNER HOME" img={logo5}/></a></div> 
+                <div className="flexbox"><a style={{color:"black"}} href="Page3"><Imageflex  caption="PORTFOLIO HOME" img={logo6}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page4"><Imageflex  caption="PARALLAX HOME" img={logo7}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page5"><Imageflex  caption="CAROUSEL HOME" img={logo8}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page6"><Imageflex  caption="ABOUT US" img={logo9}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page7"><Imageflex  caption="PORTFOLIO" img={logo10}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page8"><Imageflex  caption="BLOG" img={logo11}/></a></div>
+                <div className="flexbox"><a style={{color:"black"}} href="Page9"><Imageflex  caption="CONTACT" img={logo12}/></a></div>
                 </div>
             </>
     );
