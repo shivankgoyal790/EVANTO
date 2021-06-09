@@ -37,12 +37,12 @@ const Pageheader = () =>{
             <div className="flex-1"><img className="logo6" src={Logo1} alt="hi" /></div>
             <div className="flex-2">
                 <ul className="list3">
-                    <li className="active">HOME</li>
-                    <li>ABOUT</li>
-                    <li>PORTFOLIO</li>
+                    <li className="active"><a href="Page1" >HOME</a></li>
+                    <li><a href="Page6">ABOUT</a></li>
+                    <li><a href="Page3">PORTFOLIO</a></li>
                     <li>ELEMENTS</li>
-                    <li>BLOG</li>
-                    <li>CONTACT US</li>
+                    <li><a href="Page8">BLOG</a></li>
+                    <li><a href="Page9">CONTACT US</a></li>
                     
 
                 </ul>
