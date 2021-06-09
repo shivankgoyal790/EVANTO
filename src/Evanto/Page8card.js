@@ -28,7 +28,7 @@ const Page8card = (props) =>{
                     a ballpark value added activity to beta test. Override the digital divide with additional Phosfluorescently engage
                     worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric 
                     “outside the box” thinking. Completely pursue scalable customer service through</p>
-                    <button className="btn8">SEE MORE +</button>
+                    <button className="btn8">SEE MORE &#8594;</button>
                 </div>
             </div>
         </>
