@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from 'react-dom';
-import Page1 from "./Evanto/Page1.js"
-ReactDOM.render(<Page1/>,
+import {BrowserRouter} from "react-router-dom"
+import Evantorouter from "./Evanto/Evantorouter"
+ReactDOM.render(<BrowserRouter><Evantorouter/></BrowserRouter>,
   document.getElementById('root')
 );
 
