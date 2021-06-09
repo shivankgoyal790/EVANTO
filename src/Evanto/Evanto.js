@@ -27,18 +27,16 @@ const Evanto = () => {
 window.addEventListener('scroll', toggleVisible);
     return( 
         <>
-        <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-        </style>
-                <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
+        <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');</style>
+        <button id="gotop" className="scrolltop" style={{display: visible ? 'block' : 'none'}}  onClick={myfunction1}><FontAwesomeIcon icon={faAngleUp}/></button>
             
-            
-            <div className="navbar1"> 
-                <span className="logo"> 
-                <img className="img1" src={Logo1}  alt="logo" />
-                </span>
+        <div className="navbar1"> 
+            <span className="logo"> 
+            <img className="img1" src={Logo1}  alt="logo" />
+            </span>
             <button className="btn1">Buy now</button>
-            </div>
+        </div>    
+          
 
             <div className="backimg">
                 <div class="flex-container">
@@ -57,7 +55,7 @@ window.addEventListener('scroll', toggleVisible);
                 <div className="heading0">
                     <h4 className="h4">Limerick - Most powerful Theme on Market</h4>
                     <h1 className="heading1">Creative Portfolio WordPress Theme</h1>
-                    <button className="btn4">EXPLORE DEMOES</button>
+                    <a href="Page1"><button className="btn4">EXPLORE DEMOES</button></a>
                 </div>
             </div>
           
