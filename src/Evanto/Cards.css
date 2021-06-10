@@ -1,10 +1,17 @@
 .card-container{
     background-color: white;
-    padding:10% 5% 1% 5%;
+    padding:10% 12% 1% 12%;
     text-align: center;
     font-size: 16.5px;
     height: 360px;
 
+}
+
+
+.card-container > p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #747474;
 }
 
 .iconsize{
@@ -12,9 +19,19 @@
     color: #ff3271;
 }
 
+.cardheading4{
+    margin-top: 8px;
+    font-size: 20px;
+    
+}
+
 @media screen and (max-width:350px) {
     .card-container{
-        font-size: 12px;
+        font-size: 4vw;
         height: 500px;
+    }
+
+    .iconsize{
+        font-size: 15vw;
     }
 }

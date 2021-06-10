@@ -8,7 +8,7 @@ const Card = (props) =>{
         <>
             <div className="card-container">
                     <i className="iconsize"><FontAwesomeIcon icon={props.Myicon} /></i>
-                    <h4 style= { {marginTop : "8px"}}>{props.heading}</h4>
+                    <h4 className="cardheading4">{props.heading}</h4>
                     <p style={ {color: "#747474" , lineHeight:"30px" }}>{props.para}</p>
 
             </div>
