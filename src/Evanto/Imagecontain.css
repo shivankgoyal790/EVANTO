@@ -4,19 +4,14 @@
     flex-direction:row ;
     position: static;
     row-gap: 3cm;
-    padding: 100px 180px 20px 100px;
-
+    padding: 50px 5% 50px 0%;
+    
 }
 
 .flexbox{
-    flex:30%;
-    margin: 20px;
-
+    flex:310px;
+    margin: 1.9%;
 }
-
-
-
-
 
 @media screen and (max-width:900px) {
 
@@ -27,9 +22,25 @@
     }
 
     .flexbox{
-        width: 100%;
+        width: 98%;
+        margin: 1%;
     }
    
 
+}
+
+@media screen and (max-width:420px) {
+    
+
+    .flex-container1{
+        padding: 50px 0%;
+        overflow-x: hidden;
+        position: relative;
+    }
+
+    .flexbox{
+        width: 90%;
+        margin-left: -5%;
+    }
 }
 
