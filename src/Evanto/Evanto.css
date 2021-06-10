@@ -84,26 +84,37 @@ a:hover{
 
 .navbar1{
     width: 100%;
-    margin-top: 0;
     background-color: #262626;
     padding-top: 18px;
-    padding-left: 8px;
-    padding-right: 14px;
     padding-bottom: 12px;
+}
+
+.imag1{
+    width: 100%;
+    height: 615px;
+}
+
+.imag2{
+    width: 66%;
+    margin-top: 5%;
 }
 
 
 .container{
     text-align: center;
 }
-.img1{
+.img2{
 
     width: 130px;
 }
 
+.img1{
+    width: 20%;
+}
+
 .logo{
     
-    margin-left: 12px;
+    margin-left: 1%;
     
 
 }
@@ -135,7 +146,7 @@ h1{
 
 
 .heading1{
-    font-size : 70px;
+    font-size : 4.5vw;
     font-weight :750;
     line-height: 70px;
 
@@ -263,10 +274,10 @@ html{
       position: absolute;
   }
 
-  .footer1{
+  .myfoot{ 
        color: #222;
-      margin-top: 70%;
-      color: black;
+      margin-top: 20%;
+      z-index: 103;
       padding-bottom: 250px;
       font-size: 50px;
       font-weight: 700;
@@ -276,14 +287,20 @@ html{
 
   }
 
-  .foot{
-      position: relative;
+  .footer2{
+      text-align: center;
+      background-image: url("./images/responsive.jpg");
+      background-size: 100%;
+      background-attachment:scroll;
+      width: 100%;
+      height: 35vw;
+      
   }
 
   .foots{
       z-index: 1;
       color: white;
-      font-family: poppins;
+      font-family: "Poppins";
         margin-top: 7%;
         width: 100%;
         position: absolute;
@@ -298,8 +315,14 @@ html{
       left: 15%;
   }
 
-  .font1{
+  .fontcolor1{
       font-size: 4vw;
+      color: white;
+      z-index: 99;
+  }
+
+  .fontcolor1 > h1{
+      font-size: 3vw;
   }
 
 
@@ -316,12 +339,19 @@ html{
     }
   }
 
-  @media screen and (max-width:380px){
+  @media screen and (max-width:385px){
 
     .heading0{
         width: 100%;
-        position: static;
 
+    }
+
+    .fontcolor1 > h1{
+        font-size: 8vw;
+    }
+
+    .footer2{
+        height: 200px;
     }
   }
 
@@ -348,6 +378,8 @@ html{
 
     .heading0{
         width: 100%;
+        margin: 0;
+        left: 10%;
         text-align: center;
 
     }
@@ -358,6 +390,19 @@ html{
 
     .pos{
         position: static;
+    }
+
+    .flex2{
+        flex:100%;
+        padding: 20px 0px;
+        margin: 0%;
+        font-size: 3vw;
+    }
+
+    .flex-container{
+        text-align: center;
+        margin: 0%;
+        padding: 0%;
     }
 
     

@@ -40,7 +40,7 @@ window.addEventListener('scroll', toggleVisible);
 
             <div className="backimg">
                 <div class="flex-container">
-                    <div class="flex1">  <img className="img1" src={Logo2} alt="hi" /> </div>
+                    <div class="flex1">  <img className="img2" src={Logo2} alt="hi" /> </div>
                     <div class="flex2">
                             <span className="space">Home</span>
                             <a href="#pad" className="anchor"><span className="space">Main Demo</span></a>
@@ -70,17 +70,15 @@ window.addEventListener('scroll', toggleVisible);
             <div id="cardtag"><CardContainer /></div>
             
             
-            <div className="foot">
-                
-                <img src={logo4} alt="hi" className="logo4"/>
-                <div className="foots">
-                <h1 className="font1">Fully Responsive </h1>
-                <h1 className="font1">& Retina Ready</h1>
-                </div>
-                <img src={logo5} alt="hi" className="logo1" />
+            <div className="footer2">
+                <div className="fontcolor1">
+                    <h1 >Fully Responsive </h1>
+                    <h1 >& Retina Ready</h1>
+                </div>   
+                <img src={logo5} alt="hi"  className="imag2"/>
             </div>
-           
-            <div className="footer1">
+           <br></br>
+            <div className="myfoot">
                 <h1>Your Great-Looking Website</h1>
                 <h1>Starts Right Here.</h1>
                 <button className="btn2">PURSHASE NOW</button>
