@@ -4,7 +4,6 @@ import Imagecontain from "./Imagecontain.js"
 import Logo1 from "E:/react_practice/development/src/Evanto/images/evantologo.svg";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Logo2 from "E:/react_practice/development/src/Evanto/images/logo.png";
-import logo4 from "E:/react_practice/development/src/Evanto/images/responsive.jpg";
 import logo5 from "E:/react_practice/development/src/Evanto/images/mockup.png";
 import CardContainer from './CardContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -78,6 +77,7 @@ window.addEventListener('scroll', toggleVisible);
                 <img src={logo5} alt="hi"  className="imag2"/>
             </div>
            <br></br>
+           
             <div className="myfoot">
                 <h1>Your Great-Looking Website</h1>
                 <h1>Starts Right Here.</h1>

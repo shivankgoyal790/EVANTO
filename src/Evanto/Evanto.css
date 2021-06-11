@@ -64,7 +64,8 @@ a:hover{
 .center1{
     text-align: center;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 3vw;
+    width: 100%;
 }
 
 .back{
@@ -287,6 +288,10 @@ html{
 
   }
 
+  .myfoot > h1{
+      font-size: 3vw;
+  }
+
   .footer2{
       text-align: center;
       background-image: url("./images/responsive.jpg");
@@ -337,6 +342,10 @@ html{
     .flex3{
         flex:100%;
     }
+
+    .pad{
+        margin-top: 0;
+    }
   }
 
   @media screen and (max-width:385px){
@@ -346,6 +355,14 @@ html{
 
     }
 
+    .heading0 > h1{
+        font-size: 8vw;
+    }
+
+    .heading0 > h4{
+        font-size: 8vw;
+    }
+
     .fontcolor1 > h1{
         font-size: 8vw;
     }
@@ -353,6 +370,20 @@ html{
     .footer2{
         height: 200px;
     }
+
+    .btn2{
+        width: 100%;
+        font-size: 10vw;
+    }
+
+    .img2{
+        width: 100%;
+    }
+
+    body{
+        overflow: scroll;
+    }
+
   }
 
 
@@ -364,7 +395,7 @@ html{
 
     .pad{
         position: relative;
-        margin-top: 100%;
+        margin-top: 0;
     }
 
     
@@ -372,8 +403,16 @@ html{
     height: 300px;
 }
 
+.center1{
+    font-size: 8vw;
+}
+
 .foots{
     font-size: 10px;
+}
+
+.myfoot > h1{
+    font-size: 8vw;
 }
 
     .heading0{
@@ -417,6 +456,9 @@ html{
      .heading0{
          width: 80%;
          z-index: -1;
+         position: static;
+         margin-top: 20%;
+         margin-left: 10%;
      }
     .pad{
         margin-top: 70%;
@@ -424,6 +466,8 @@ html{
 
     .backimg{
         background-image: none;
+        min-height: 100px;
+        position: static;
     }
 
 
@@ -441,9 +485,7 @@ html{
 
 @media screen and (max-width:900px) {
     
-    .pad{
-        margin-top: 100%;
-    }
+    
 
 }
 
