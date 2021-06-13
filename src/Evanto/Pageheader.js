@@ -8,9 +8,11 @@ import { faGooglePlusG } from '@fortawesome/free-brands-svg-icons'
 import { faPinterestP} from '@fortawesome/free-brands-svg-icons' 
 import { faDribbble} from '@fortawesome/free-brands-svg-icons'
 import {faBars} from '@fortawesome/free-solid-svg-icons'
+
 const Pageheader = () =>{
 
     const[pad , setpad] = useState(true);
+
     const togglepad = () =>{
         
         if(document.documentElement.scrollTop < 25)
@@ -24,7 +26,7 @@ const Pageheader = () =>{
             setvisible(false);
          else
             setvisible(true)   
-        }
+        } 
 
     window.addEventListener("scroll" , togglepad);
     window.addEventListener("resize" , toggledisplay);
@@ -36,16 +38,54 @@ const Pageheader = () =>{
         <div className="flexbox1" style={{padding: pad ? "65px 0px" : "30px 0px"}}>
             <div className="flex-1"><img className="logo6" src={Logo1} alt="hi" /></div>
             <div className="flex-2">
-                <ul className="list3">
-                    <li className="active"><a href="Page1" >HOME</a></li>
-                    <li><a href="Page6">ABOUT</a></li>
-                    <li><a href="Page3">PORTFOLIO</a></li>
-                    <li>ELEMENTS</li>
-                    <li><a href="Page8">BLOG</a></li>
-                    <li><a href="Page9">CONTACT US</a></li>
-                    
+                <div className="list3"> 
+                    <span className="tooltip2"><a href="Page1" >HOME</a>
+                     <div className="tool-container" >
+                        <div className="mylist">Creative Home</div>
+                        <div className="mylist">Designer Home</div>
+                        <div className="mylist">Portfolio Home</div>
+                        <div className="mylist"> Parallax Home</div>
+                        <div className="mylist">Carousel Home</div>
+                        <div className="mylist">Header Style</div>
+                     </div>
 
-                </ul>
+                    </span>
+                    <span className="tooltip2"><a href="Page6">ABOUT</a>
+                        <div className="tool-container">
+                        <div className="mylist">Creative Home</div>
+                        <div className="mylist">Designer Home</div>
+                        </div>
+                    </span>
+
+                    <span  className="tooltip2"><a href="Page3">PORTFOLIO</a>
+                    <div className="tool-container" >
+                        <div className="mylist">Portfolio Left Sidebar</div>
+                        <div className="mylist">Portfolio Right Sidebar</div>
+                        <div className="mylist">Portfolio Centered</div>
+                        <div className="mylist">Portfolio Slide</div>
+                        <div className="mylist">Portfolio Mansonry</div>
+                     </div>
+                    </span>
+                    <span  className="tooltip2">ELEMENTS
+                    <div className="tool-container" >
+                        <div className="mylist">Home</div>
+                        <div className="mylist">Header Style</div>
+                        <div className="mylist">About</div>
+                        <div className="mylist">Portfolio</div>
+                     </div>
+                    </span>
+                    <span  className="tooltip2"><a href="Page8">BLOG</a>
+                    <div className="tool-container" >
+                        <div className="mylist">Blog With Sidebar</div>
+                        <div className="mylist">Blog Grid View</div>
+                        <div className="mylist">Blog List View</div>
+                        <div className="mylist">Blog Mansonry</div>
+                        <div className="mylist">Blog Single</div>
+                     </div>
+                    </span>
+                    <span  className="tooltip2"><a href="Page9">CONTACT US</a></span>
+                </div>
+            
             </div>
             <div className="flex-3">
                 
