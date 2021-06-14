@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 import "./Evanto.css";
-import Imagecontain from "./Imagecontain.js"
+import Imagecontain from "./Components/Imagecontainer/Imagecontain"
 import Logo1 from "E:/react_practice/development/src/Evanto/images/evantologo.svg";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import Logo2 from "E:/react_practice/development/src/Evanto/images/logo.png";
 import logo5 from "E:/react_practice/development/src/Evanto/images/mockup.png";
-import CardContainer from './CardContainer';
+import CardContainer from './Components/Cardcontainer/CardContainer';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faAngleUp } from '@fortawesome/free-solid-svg-icons'
 
