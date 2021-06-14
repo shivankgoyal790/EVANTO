@@ -1,0 +1,20 @@
+.footimage{
+    width:220px;
+    margin-bottom: 10px;
+}
+.foot{
+    position: relative;
+    text-align: center;
+    padding: 5.5% 0% 5.5% 0%;
+    background-color: #f4f9ff;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width:500px) {
+    
+    .footimage{
+        width: 70%;
+    }
+}
+

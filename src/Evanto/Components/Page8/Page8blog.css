@@ -1,0 +1,17 @@
+body{font-family:"Poppins" ;}
+
+.time{
+    font-size: 14px;
+    color: #555;
+}
+
+.comments{
+    font-size: 15px;
+}
+
+
+.comments:hover{
+    color: #f85678;
+    transition: ease 1s;
+    text-decoration: underline;
+}

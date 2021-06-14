@@ -1,0 +1,81 @@
+.page-container2{
+    width: 350px;
+    margin-left:20px;
+    margin-top: 40px;
+    position: relative;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+    font-family: 'poppins';
+}
+
+.over1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+}
+
+.page-container2:hover .over1{
+    display: block;
+    transition: ease 1s;
+}
+
+.imageover1{
+    width: 100%;
+    overflow-y: hidden;
+    height: 85%;
+    position: relative;
+    background-color: brown;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+.imageover1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.page-container2:hover img{
+    transform:  scale(1.3);
+    transition: ease 1.5s;
+    object-fit: cover;
+}
+
+.page-container2 > h1{
+    color: #333333;
+    font-size: 20px;
+    line-height: 1cm;
+    font-weight: 500;
+}
+
+.page-container2 > h1:hover{
+color: #ff3271;
+cursor: pointer;
+transition: ease 0.5s;
+}
+
+
+.page-container2 > h3{
+    color: #777777;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media screen and (max-width:1130px) {
+.page-container2{
+    width: 45%;
+}
+
+}
+@media screen and (max-width:769px) {
+    
+    .page-container2{
+        width: 100%;
+    }
+}
+

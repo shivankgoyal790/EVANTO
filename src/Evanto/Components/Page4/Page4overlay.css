@@ -1,0 +1,39 @@
+.pos1{
+    position: absolute;
+    top:35%;
+    left: 0cm;
+    width: 100%;
+ 
+}
+
+
+
+.pos1 > p {
+    font-size: 22px;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+
+}
+
+.centerdiv1{
+    color: black;
+    width: 100%;
+    z-index: 99;
+    font-weight: 1500;
+    text-align: center;
+}
+
+.centerhead{
+background-color: white;
+font-weight: 800;
+line-height: 2.5cm;
+font-size: 80px;
+padding: 0px 10px;
+}
+
+@keyframes slideleft{
+    from{text-align: right;}
+    to{text-align: center;}
+}
+
