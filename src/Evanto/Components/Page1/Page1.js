@@ -22,6 +22,7 @@ import Overlay from "./Overlay.js"
 import Pageheader from "../Pageheader1/Pageheader";
 import Pagefooter from "../Pagefooter/Pagefooter";
 import Gototop from "./../../Gototop";
+
 const Page1 = () =>{
     
   
@@ -40,7 +41,7 @@ const Page1 = () =>{
                        <img className="image1" src={Logo2} alt="hi"/>
                     <div>
                     <h1 className="text">Paper Lost Boat</h1>
-                    <button className="overbtn">READ MORE +</button>
+                    <a href="Centerslide"><button className="overbtn"> READ MORE +</button></a>
                     </div>
                     </div>
                 </div>
